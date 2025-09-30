@@ -558,8 +558,8 @@ Connection /
 }
 
 /* Иконки (пример — подставь свои SVG) */
-.icon-phone { background-image: url('../../Devseo/img/icon_Call_small.svg'); }
-.icon-mail  { background-image: url('../../Devseo/img/icon_mail.svg'); }
+.icon-phone { background-image: url('.././img/icon_Call_small.svg'); }
+.icon-mail  { background-image: url('.././img/icon_mail.svg'); }
 /* Адаптив */
 @media (max-width: 768px) {
   .team-member,
