@@ -437,7 +437,17 @@ Connection /
     gap: 40px;
   }
 }
-
+@media (max-width: 600px) {
+  .mission-text h3 {
+    font-size: 1.1em;
+    white-space: normal; /* можно переносить строки */
+  }
+  .mission-text p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+}
 
 
 
