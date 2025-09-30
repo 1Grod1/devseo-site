@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DevSEO</title>
+  <meta name="description" content="вёрстка адаптивного сайта" />
+  <link rel="icon" type="image/png" href="../Devseo/devseo.png">
+  <link rel="stylesheet" href="../Devseo/css/style.css" />
+</head>
+<body>
+<!-- =============================
+     HEADER / NAV
+     Под Figma: замени логотип и пункты меню, добавь CTA если нужно
+============================== -->
+<header class="site-header">
+  <div class="container nav">
+    <!-- ЛОГО -->
+    <a href="../Devseo/index.html#" class="logo" aria-label="На главную">
+      <img src="../Devseo/img/icon_hader/Logog.svg" alt="Логотип">
+    </a>
+
+
+    <nav aria-label="Основная навигация">
+      <button class="nav-toggle" id="navBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+        ☰
+      </button>
+      <div class="nav-links" id="navMenu">
+        <!-- МЕНЮ -->
+        <nav class="main-nav" aria-label="Основная навигация">
+          <a href="../Devseo/index.html#about">О нас</a>
+          <a href="../Devseo/index.html#training">Обучение</a>
+          <a href="../Devseo/index.html#gallery">Фото</a>
+          <a href="../Devseo/index.html#faq">FAQ</a>
+          <a href="../Devseo/index.html#reviews">Отзывы</a>
+        </nav>
+        <!-- КОНТАКТЫ -->
+        <div class="contacts">
+          <a href="tel:+79033331623" class="phone"><img src="../Devseo/img/icon_hader/icon_Call.svg" alt="Call">+7 (903) 333-16-23</a>
+          <div class="socials">
+            <a href="https://wa.me/79033331623" target="_blank" rel="noopener">
+              <img src="../Devseo/img/icon_hader/Whatsapp.svg" alt="Whatsapp">
+            </a>
+            <a href="viber://chat?number=79033331623" target="_blank" rel="noopener">
+              <img src="../Devseo/img/icon_hader/Viber.svg" alt="Viber">
+            </a>
+            <a href="https://t.me/username" target="_blank" rel="noopener">
+              <img src="../Devseo/img/icon_hader/Telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://hh.ru" target="_blank" rel="noopener">
+              <img src="../Devseo/img/icon_hader/min-hh.svg" alt="HeadHunter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- =============================
+     ОТЗЫВЫ
+============================== -->
+<main class="reviews-page container">
+
+  <!-- Шапка страницы -->
+  <header class="reviews-page__head">
+    <h1>Отзывы</h1>
+    <div class="head-actions">
+      <span class="total">Всего: <b id="reviewsTotal">128</b></span>
+    </div>
+  </header>
+
+  <!-- Сводка рейтинга -->
+  <section class="rating-summary">
+    <div class="avg">
+      <div class="avg-num" id="avgNum">4.6</div>
+      <div class="avg-stars">
+        <span class="rating-number">4.6</span>
+        <span class="rating-stars"></span>
+      </div>
+      <small>на основе <span id="avgCount">128</span> отзывов</small>
+    </div>
+
+    <div class="dist">
+      <!-- 5 -> 1 -->
+      <div class="dist-row">
+        <span class="d-label">5</span>
+        <div class="bar"><span style="width:62%"></span></div>
+        <span class="count">79</span>
+      </div>
+      <div class="dist-row">
+        <span class="d-label">4</span>
+        <div class="bar"><span style="width:24%"></span></div>
+        <span class="count">31</span>
+      </div>
+      <div class="dist-row">
+        <span class="d-label">3</span>
+        <div class="bar"><span style="width:9%"></span></div>
+        <span class="count">12</span>
+      </div>
+      <div class="dist-row">
+        <span class="d-label">2</span>
+        <div class="bar"><span style="width:3%"></span></div>
+        <span class="count">4</span>
+      </div>
+      <div class="dist-row">
+        <span class="d-label">1</span>
+        <div class="bar"><span style="width:2%"></span></div>
+        <span class="count">2</span>
+      </div>
+    </div>
+  </section>
+
+<!--  &lt;!&ndash; Фильтры и сортировка &ndash;&gt;-->
+<!--  <section class="filters">-->
+<!--    <input type="search" placeholder="Поиск по отзывам…" id="q">-->
+<!--    <select id="city">-->
+<!--      <option value="">Все города</option>-->
+<!--      <option>Тольятти</option><option>Самара</option><option>Казань</option>-->
+<!--    </select>-->
+<!--    <select id="role">-->
+<!--      <option value="">Все должности</option>-->
+<!--      <option>Менеджер по продажам</option><option>Оператор</option>-->
+<!--    </select>-->
+<!--    <select id="stars">-->
+<!--      <option value="">Все оценки</option>-->
+<!--      <option value="5">Только 5★</option>-->
+<!--      <option value="4">4★ и выше</option>-->
+<!--      <option value="3">3★ и выше</option>-->
+<!--    </select>-->
+<!--    <select id="sort">-->
+<!--      <option value="new">Сначала новые</option>-->
+<!--      <option value="rating_desc">Высокие оценки</option>-->
+<!--      <option value="rating_asc">Низкие оценки</option>-->
+<!--      <option value="with_photos">С фото</option>-->
+<!--    </select>-->
+<!--  </section>-->
+
+  <!-- Лента отзывов -->
+  <section class="reviews-list" id="reviewsList">
+    <!-- Карточка -->
+    <article class="review-card">
+      <header class="review-header">
+        <h3 class="review-title">Менеджер по работе с клиентами</h3>
+        <div class="review-meta">Тольятти, май 2025</div>
+
+        <div class="review-rating">
+          <span class="rating-number">4.5</span>
+          <span class="rating-stars"></span>
+        </div>
+
+        <hr class="divider">
+      </header>
+
+      <div class="review-body">
+        <h4>Что нравится?</h4>
+        <p>Комфортные условия работы… (длинный текст для примера, чтобы заработало «Читать целиком»)</p>
+        <h4>Что можно улучшить?</h4>
+        <p>Замечаний нет — всё обсуждаем и решаем.</p>
+      </div>
+
+      <button class="more" data-more>Читать целиком</button>
+    </article>
+
+    <!-- Ещё одна карточка -->
+    <article class="review-card">
+      <header class="review-header">
+        <h3 class="review-title">Оператор контакт-центра</h3>
+        <div class="review-meta">Самара, апрель 2025</div>
+        <div class="review-rating">
+          <span class="rating-number">5</span>
+          <span class="rating-stars"></span>
+        </div>
+        <hr class="divider">
+      </header>
+      <div class="review-body">
+        <h4>Что нравится?</h4>
+        <p>Команда и наставники, график, прозрачная система бонусов.</p>
+        <h4>Что можно улучшить?</h4>
+        <p>Хотелось бы больше офлайн-тренингов.</p>
+      </div>
+      <button class="more" data-more>Читать целиком</button>
+    </article>
+  </section>
+
+  <!-- Показать ещё -->
+  <div class="reviews-more">
+    <button class="btn" id="loadMore">Показать ещё</button>
+  </div>
+</main>
+
+
+<!-- =============================
+     FOOTER
+============================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Лого слева -->
+    <a href="../Devseo/index.html#" class="footer-logo" aria-label="На главную">
+      <img src="../Devseo/img/icon_hader/Logog.svg" alt="DEVSEO — contact center">
+    </a>
+
+    <!-- Текст справа -->
+    <div class="footer-right">
+      <!--      <p class="muted">© <span id="year"></span> Все права защищены.</p>-->
+      <span class="copy">© <span id="year"></span> DEVSEO — все права защищены</span>
+      <span class="divider" aria-hidden="true"></span>
+      <a class="privacy" href="../Devseo/privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Рисуем звёзды (поддержка половинок) по .rating-number
+    function renderStars(scope=document){
+      scope.querySelectorAll('.review-rating').forEach(block=>{
+        const numEl = block.querySelector('.rating-number');
+        const starsEl = block.querySelector('.rating-stars');
+        if(!numEl||!starsEl) return;
+        const raw = parseFloat((numEl.textContent||'0').replace(',', '.')) || 0;
+        const rating = Math.round(Math.max(0, Math.min(5, raw))*2)/2;
+        starsEl.innerHTML='';
+        for(let i=1;i<=5;i++){
+          const s=document.createElement('span'); s.className='star';
+          if(i<=Math.floor(rating)) s.dataset.fill='full';
+          else if(i-0.5===rating)   s.dataset.fill='half';
+          else                      s.dataset.fill='empty';
+          starsEl.appendChild(s);
+        }
+        starsEl.setAttribute('aria-label',`Рейтинг ${rating} из 5`);
+      });
+    }
+    renderStars();
+
+    // «Читать целиком»
+    document.querySelectorAll('[data-more], .more').forEach(btn=>{
+      const card = btn.closest('.review-card'); if(!card) return;
+      const paras = card.querySelectorAll('.review-body p');
+      const full = Array.from(paras).map(p=>p.textContent);
+      const short = full.map(t=> t.length>300 ? t.slice(0,300)+'…' : t);
+      let collapsed = true;
+      function apply(){
+        paras.forEach((p,i)=> p.textContent = collapsed ? short[i] : full[i]);
+        btn.textContent = collapsed ? 'Читать целиком' : 'Свернуть';
+      }
+      apply();
+      btn.addEventListener('click',()=>{ collapsed=!collapsed; apply(); });
+    });
+
+    // Заглушка под «Показать ещё»
+    document.getElementById('loadMore')?.addEventListener('click', ()=>{
+      alert('Можно подключить подгрузку отзывов через API/JSON.');
+    });
+  });
+</script>
+
+</body>
+</html>

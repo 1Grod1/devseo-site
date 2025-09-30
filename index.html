@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DevSEO</title>
+  <meta name="description" content="вёрстка адаптивного сайта" />
+  <link rel="icon" type="image/png" href="devseo.png">
+  <link rel="stylesheet" href="../Devseo/css/style.css" />
+</head>
+<body>
+<!-- =============================
+     HEADER / NAV
+     Под Figma: замени логотип и пункты меню, добавь CTA если нужно
+============================== -->
+<header class="site-header">
+  <div class="container nav">
+    <!-- ЛОГО -->
+    <a href="../Devseo/index.html#" class="logo" aria-label="На главную">
+      <img src="../Devseo/img/icon_hader/logo.png" alt="Логотип">
+    </a>
+
+
+    <nav aria-label="Основная навигация">
+            <button class="nav-toggle" id="navBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+              ☰
+            </button>
+            <div class="nav-links" id="navMenu">
+    <!-- МЕНЮ -->
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#about">О нас</a>
+      <a href="#training">Обучение</a>
+      <a href="#gallery">Фото</a>
+      <a href="#faq">FAQ</a>
+      <a href="#reviews">Отзывы</a>
+    </nav>
+    <!-- КОНТАКТЫ -->
+    <div class="contacts">
+      <a href="tel:+79033331623" class="phone"><img src="../Devseo/img/icon_hader/icon_Call.svg">+7 (903) 333-16-23</a>
+      <div class="socials">
+        <a href="https://wa.me/79033331623" target="_blank" rel="noopener">
+          <img src="../Devseo/img/icon_hader/Whatsapp.svg" alt="Whatsapp">
+        </a>
+        <a href="viber://chat?number=79033331623" target="_blank" rel="noopener">
+          <img src="../Devseo/img/icon_hader/Viber.svg" alt="Viber">
+        </a>
+        <a href="https://t.me/username" target="_blank" rel="noopener">
+          <img src="../Devseo/img/icon_hader/Telegram.svg" alt="Telegram">
+        </a>
+        <a href="https://hh.ru" target="_blank" rel="noopener">
+          <img src="../Devseo/img/icon_hader/min-hh.svg" alt="HeadHunter">
+        </a>
+      </div>
+    </div>
+            </div>
+    </nav>
+  </div>
+</header>
+
+<!-- =============================
+     HERO
+     Под Figma: заголовок/подзаголовок, кнопки, иллюстрация/скриншот
+============================== -->
+<section class="container hero section">
+  <div class="hero__text">
+    <div class="brand" aria-label="DEVSEO">
+      <span class="dev">DEV</span><span class="seo">SEO</span>
+      <h1 class="hero__subtitle">современный контакт-центр</h1>
+    </div>
+    <p class="hero__lead">
+      Успешно работаем с 2019 года. Прошли
+      впечатляющий путь развития, постоянно
+      совершенствуя свои процессы и подходы к работе!
+    </p>
+    <div class="cta">
+      <a class="btn btn--primary" href="#mission">Присоединиться</a>
+      <a class="btn btn--outline" href="#about">Подробнее</a>
+    </div>
+  </div>
+
+  <div class="hero__media">
+    <img class="media" src="./img/Group_449.svg" alt="">
+  </div>
+</section>
+
+<hr class="divider">
+
+
+<!-- =============================
+      Connection /
+      ДОБРО ПОЖАЛОВАТЬ
+============================== -->
+<section id="about" class="section">
+  <div class="container about">
+
+    <!-- Верхняя строка -->
+    <div class="header">
+      <div class="line"></div>
+      <h2>ДОБРО ПОЖАЛОВАТЬ!</h2>
+    </div>
+
+    <!-- Нижняя строка -->
+    <div class="about-body">
+      <div class="about-media">
+        <video class="media" controls poster="../Devseo/img/video-poster.svg">
+          <source src="../Devseo/img/video.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+
+      <div class="about-text">
+        <p>
+          <strong>DEVSEO</strong> — это пространство роста, где каждый сотрудник получает не только работу,
+          но и инструменты для развития. В DEVSEO каждый специалист получает:
+        </p>
+
+        <ol>
+          <li>Гарантированную безопасность труда</li>
+          <li>Профессиональное развитие и рост</li>
+          <li>Ценный опыт коммуникации и достижения результатов</li>
+        </ol>
+
+        <p>
+          <strong>Наша гордость</strong> — это уникальная система обучения и чётко выстроенные рабочие процессы.
+          Мы способны превратить любого целеустремлённого новичка в высококвалифицированного специалиста.
+          Наши партнёры высоко оценивают качество работы DEVSEO, признавая нас одними из лидеров в своей нише.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================
+      Connection /
+      МИССИЯ
+============================== -->
+<section id="mission" class="section mission">
+  <div class="container">
+    <!-- Верхняя строка -->
+    <!-- Заголовок -->
+    <div class="header">
+      <h2>
+        МИССИЯ <span class="dev">DEV</span><span class="seo">SEO</span>
+      </h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- Два столбца -->
+    <div class="mission-body">
+      <!-- Левый столбец -->
+      <div class="mission-text">
+        <h3>ПОМОГАТЬ ОБЩЕСТВУ СТАНОВИТЬСЯ ЛУЧШЕ!</h3>
+
+        <p>
+          Мы боремся с проблемой употребления алкоголя и других веществ,
+          консультируя клиентов и предлагая им эффективные решения для
+          изменения жизни к лучшему.
+        </p>
+
+        <p>
+          Тысячи людей уже сделали первый шаг к новой, здоровой жизни
+          благодаря нашей поддержке.
+        </p>
+
+        <p><strong>Присоединяйтесь к команде профессионалов, меняющих мир к лучшему!</strong></p>
+      </div>
+
+      <!-- Правый столбец (форма) -->
+      <form class="mission-form">
+        <input type="text" name="name" placeholder="Ваше имя?" required>
+        <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+
+        <label class="checkbox">
+          <input type="checkbox" required>
+          Я даю согласие на хранение и обработку персональных данных
+        </label>
+
+        <button type="submit" class="btn">Хочу в команду!</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<!-- =============================
+      TEACHERS /
+      РУКОВОДСТВО И ОПЫТ
+============================== -->
+<section id="team" class="section team">
+  <div class="container">
+
+    <!-- Заголовок -->
+    <div class="header">
+      <div class="line"></div>
+      <h2>РУКОВОДСТВО И ОПЫТ</h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- Первый руководитель -->
+    <div class="team-member">
+      <div class="team-photo">
+        <img src="../Devseo/img/Dmitri.png" alt="Дыдыкин Дмитрий Викторович">
+        <span class="badge">1</span>
+      </div>
+      <div class="team-info">
+        <h3>Дыдыкин Дмитрий Викторович</h3>
+        <p class="position">Генеральный директор</p>
+        <p class="desc">
+          Компания «DEVSEO» стремится максимально соответствовать требованиям потребителя.
+          Компания «DEVSEO» стремится максимально соответствовать требованиям потребителя.
+          Компания «DEVSEO» стремится максимально соответствовать требованиям потребителя.
+          Компания «DEVSEO» стремится максимально соответствовать требованиям потребителя.
+          Компания «DEVSEO» стремится максимально соответствовать требованиям потребителя.
+        </p>
+        <div class="actions">
+          <a href="tel:+79000000000" class="action action--phone" >
+            <i class="icon-phone"></i> Позвонить
+          </a>
+          <a href="mailto:info@devseo.ru" class="action action--mail">
+            <i class="icon-mail"></i> Написать
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Второй руководитель -->
+    <div class="team-member reverse">
+      <div class="team-photo">
+        <img src="../Devseo/img/Alekse.png" alt="Акимов Алексей Олегович">
+        <span class="badge">2</span>
+      </div>
+      <div class="team-info">
+        <h3>АКИМОВ АЛЕКСЕЙ ОЛЕГОВИЧ</h3>
+        <p class="position">Руководитель контакт-центра</p>
+        <p class="desc">
+          Моя основная специализация: помогать людям. Я имею многолетний опыт сотрудничества
+          с благотворительными организациями. Работаю в компании с 2013 года, и накопленные
+          знания позволяют мне решить практически любую задачу, связанную с помощью людям!
+        </p>
+        <div class="actions">
+          <a href="tel:+79000000001" class="action action--phone">
+            <i class="icon-phone"></i> Позвонить
+          </a>
+          <a href="mailto:akimov@devseo.ru" class="action action--mail">
+            <i class="icon-mail"></i> Написать
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================
+     FEATURES / МЕНЕДЖЕРЫ ПО ПРОДАЖАМ
+
+============================== -->
+<section id="sales" class="section sales">
+  <div class="container">
+    <div class="pretitle">КАКИЕ ЗАДАЧИ РЕШАЮТ</div>
+    <!-- Заголовок -->
+    <div class="header white">
+      <h2>
+        МЕНЕДЖЕРЫ ПО ПРОДАЖАМ</span>
+      </h2>
+      <div class="line"></div>
+    </div>
+    <!-- 4 колонки -->
+    <div class="sales-grid">
+      <!-- 1 -->
+      <article class="sales-card">
+        <img src="../Devseo/img/managers/comm.svg" alt="" class="icon">
+        <h3 class="card-title">Коммуникация с клиентами</h3>
+        <p class="card-text">обработка входящих обращений и активные звонки для выявления потребностей, консультирование по услугам компании и проведение продаж</p>
+      </article>
+
+      <!-- 2 -->
+      <article class="sales-card">
+        <img src="../Devseo/img/managers/crm.svg" alt="" class="icon">
+        <h3 class="card-title">Работа с CRM<br>системой</h3>
+        <p class="card-text">ведение базы клиентов, контроль сделок на всех этапах, работа с возражениями и сомнениями клиентов</p>
+      </article>
+
+      <!-- 3 -->
+      <article class="sales-card">
+        <img src="../Devseo/img/managers/report.svg" alt="" class="icon">
+        <h3 class="card-title">Отчетность и<br>результаты</h3>
+        <p class="card-text">предоставление регулярных отчетов о проделанной работе, достижение установленных показателей эффективности</p>
+      </article>
+
+      <!-- 4 -->
+      <article class="sales-card">
+        <img src="../Devseo/img/managers/growth.svg" alt="" class="icon">
+        <h3 class="card-title">Профессиональное развитие</h3>
+        <p class="card-text">участие в обучающих мероприятиях для повышения квалификации и совершенствования навыков продаж</p>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================
+     Lerning / СИСТЕМА ОБУЧЕНИЯ
+============================== -->
+<section id="training" class="section training">
+  <div class="container">
+    <div class="header">
+      <h2>СИСТЕМА ОБУЧЕНИЯ</h2>
+      <div class="line"></div>
+    </div>
+    <!-- Подзаголовок -->
+    <p class="training-sub">
+      Мы создали комплексную систему развития сотрудников в компании, включающую:
+    </p>
+
+    <!-- Список блоков -->
+    <div class="training-list">
+      <!-- 1 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-1.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Персональное наставничество</h3>
+          <p>Регулярные совместные рабочие сессии несколько часов в неделю</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-2.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Ежедневная обратная связь</h3>
+          <p>Оценка по чек-листам и конструктивные рекомендации</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-3.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Ежемесячные тренинги</h3>
+          <p>Два раза в месяц проводим групповые занятия в классическом и игровом форматах</p>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-4.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Индивидуальное развитие</h3>
+          <p>Регулярные встречи для анализа прогресса и планирования целей</p>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-5.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Доступ к знаниям</h3>
+          <p>Корпоративная база с регламентами, инструкциями и скриптами</p>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="t-item">
+        <img src="../Devseo/img/sistem_lern/train-6.svg" alt="" class="t-icon">
+        <div class="t-content">
+          <h3>Онлайн-обучение</h3>
+          <p>Современный портал iSpring с актуальными курсами для всех должностей</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Итоговая фраза с вертикальной линией слева -->
+    <div class="training-note">
+      <span class="vline" aria-hidden="true"></span>
+      Наша система соответствует стандартам крупных компаний и обеспечивает
+      постоянное профессиональное и личное развитие сотрудников.
+    </div>
+
+  </div>
+</section>
+
+<!-- =============================
+     One more thing / ЕЩЁ КОЕ-ЧТО ДЛЯ  ВАС
+============================== -->
+<section id="extras" class="section extras">
+  <div class="container">
+
+    <!-- Заголовок + линия справа -->
+    <div class="header">
+      <h2>ЕЩЁ КОЕ-ЧТО ДЛЯ ВАС</h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- 5 карточек -->
+    <div class="extras-grid">
+      <article class="extra-card">
+        <img src="../Devseo/img/One_more/money.svg" alt="" class="icon">
+        <p class="card-text">Стабильная достойная зарплата</p>
+      </article>
+
+      <article class="extra-card">
+        <img src="../Devseo/img/One_more/ps4.svg" alt="" class="icon">
+        <p class="card-text">Комфортный офис с PS4 pro, кухней и т.д.</p>
+      </article>
+
+      <article class="extra-card">
+        <img src="../Devseo/img/One_more/pc.svg" alt="" class="icon">
+        <p class="card-text">Современное рабочее место</p>
+      </article>
+
+      <article class="extra-card">
+        <img src="../Devseo/img/One_more/brain.svg" alt="" class="icon">
+        <p class="card-text">Регулярное обучение и развитие</p>
+      </article>
+
+      <article class="extra-card">
+        <img src="../Devseo/img/One_more/team.svg" alt="" class="icon">
+        <p class="card-text">Минимум текучки на рабочем месте</p>
+      </article>
+    </div>
+    <!-- Кнопка -->
+    <div class="t-btn">
+      <a class="btn" href="#mission">Успеешь занять место?</a>
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- =============================
+     reviews / ОТЗЫВЫ
+============================== -->
+<section id="reviews" class="section reviews">
+  <div class="container">
+
+    <!-- Заголовок + линия справа -->
+    <div class="header">
+      <h2>Отзывы</h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- Карточка отзыва -->
+    <article class="review-card">
+      <header class="review-header">
+        <h3 class="review-title">Менеджер по работе с клиентами</h3>
+        <div class="review-meta">Тольятти, май 2025</div>
+
+        <div class="review-rating">
+          <span class="rating-number">5.0</span>
+          <span class="rating-stars" aria-label=""></span>
+        </div>
+
+
+        <hr class="divider">
+      </header>
+
+      <div class="review-body">
+        <h4>Что нравится?</h4>
+        <p>
+          Комфортные условия работы. Очень нравится, что нет физической нагрузки, все работники
+          ходят в тапочках, есть бесплатная кофемашина и чай с вкусняшками. Зона отдыха — большой плюс,
+          можно полежать на диванчике или поиграть в PS. Дружный и весёлый коллектив, часто проводим
+          корпоративы. Есть обучение не только в профессии, но и для личностного роста. Руководители
+          всегда готовы помочь с трудностями и поддержать.
+        </p>
+
+        <h4>Что можно улучшить?</h4>
+        <p>
+          По моему мнению, всё есть для комфортной работы; если возникают замечания или предложения —
+          обсуждаем и решаем вместе.
+        </p>
+      </div>
+    </article>
+
+    <!-- Кнопка перехода на страницу всех отзывов -->
+    <div class="reviews-cta">
+      <a class="btn-orange" href="../Devseo/reviews.html">Смотреть все отзывы</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =============================
+     gallery / ФОТО С НАМИ
+============================== -->
+<section id="gallery" class="section gallery">
+  <div class="container">
+    <!-- Заголовок -->
+    <div class="header white">
+      <div class="line"></div>
+      <h2>
+        ФОТО С НАМИ</span>
+      </h2>
+    </div>
+  <!-- Лента фото -->
+  <div class="gallery-wrapper">
+    <div class="gallery-track">
+      <img src="../Devseo/img/photo/photo1.png" alt="Фото 1">
+      <img src="../Devseo/img/photo/photo2.png" alt="Фото 2">
+      <img src="../Devseo/img/photo/photo3.png" alt="Фото 3">
+      <img src="../Devseo/img/photo/photo4.png" alt="Фото 4">
+      <img src="../Devseo/img/photo/photo5.png" alt="Фото 5">
+      <img src="../Devseo/img/photo/photo6.png" alt="Фото 6">
+    </div>
+  </div>
+
+  <!-- Стрелки снизу слева/справа -->
+  <div class="gallery-arrows">
+    <button class="arrow prev" disabled aria-label="Назад">&#10140;</button>
+    <button class="arrow next" aria-label="Вперёд">&#10140;</button>
+  </div>
+  </div>
+
+  <!-- Лайтбокс -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Закрыть">×</button>
+    <img src="" alt="" id="lightbox-img">
+  </div>
+
+
+  </div>
+</section>
+
+<!-- =============================
+     QUESTIONS / ЧАСТЫЕ ВОПРОСЫ
+============================== -->
+<section id="faq" class="section faq">
+  <div class="container">
+
+    <!-- Заголовок -->
+    <div class="header">
+      <h2>Частые вопросы</h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- Список вопросов -->
+    <div class="faq-list">
+
+      <!-- 1 -->
+      <div class="faq-item open">
+        <button class="faq-question">
+          <span>Какие у вас преимущества?</span>
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer">
+          <ul>
+            <li>индивидуальный подход к каждому пациенту, составление персональной программы выздоровления;</li>
+            <li>комфорт и безопасная среда;</li>
+            <li>мониторинг, помощь и забота 24/7;</li>
+            <li>использование методов только доказательной медицины;</li>
+            <li>гарантия безопасности, анонимности и конфиденциальности.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Вопрос номер два</span>
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer">
+          <ul>
+            <li>Ответ на второй вопрос — пункт 1</li>
+            <li>Ответ на второй вопрос — пункт 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Третий вопрос</span>
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer">
+          <ul>
+            <li>Ответ на третий вопрос — пункт 1</li>
+            <li>Ответ на третий вопрос — пункт 2</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Четвертый вопрос</span>
+          <span class="arrow"></span>
+        </button>
+        <div class="faq-answer">
+          <ul>
+            <li>Ответ на четвертый вопрос — пункт 1</li>
+            <li>Ответ на четвертый вопрос — пункт 2</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- =============================
+     Suggestions for candidates / ПОЖЕЛАНИЯ К КАНДИДАТАМ
+============================== -->
+<section id="requirements" class="section training">
+  <div class="container">
+    <div class="header">
+      <h2>Пожелания к кандидатам</h2>
+      <div class="line"></div>
+    </div>
+
+    <!-- Список блоков -->
+    <div class="training-list">
+      <!-- 1 -->
+      <article class="t-item suggestions">
+        <div class="t-content">
+          <p>1. Опыт работы оператором или менеджером по продажам поощряется. Для кандидатов без опыта оплачиваемое обучение.</p>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="t-item suggestions">
+        <div class="t-content">
+          <p>2. Ориентация на результат, нацеленность на долгосрочное сотрудничество.</p>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="t-item suggestions">
+        <div class="t-content">
+          <p>3. Доброжелательность, умение найти подход к клиенту.</p>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="t-item suggestions">
+        <div class="t-content">
+          <p>4. Адекватный позитивный настрой.</p>
+        </div>
+      </article>
+    </div>
+    <div class="t-btn">
+      <a class="btn btn--primary" href="#mission">Это про тебя? Вступай в команду!</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- =============================
+      Map/ ЯНДЕКС-КАРТА
+============================== -->
+<section id="map" class="section">
+  <div class="container cards">
+<!--    <h2 class="title">Мы находимся здесь</h2>-->
+    <div class="map-wrapper" style="position:relative;overflow:hidden;border-radius:12px;">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=49.365146%2C53.540838&mode=search&oid=210772887665&ol=biz&source=serp_navig&z=16.74"
+        width="100%"
+        height="400"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen="true"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- =============================
+     FOOTER
+============================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Лого слева -->
+    <a href="../Devseo/index.html#" class="footer-logo" aria-label="На главную">
+      <img src="../Devseo/img/icon_hader/Logog.svg" alt="DEVSEO — contact center">
+    </a>
+
+    <!-- Текст справа -->
+    <div class="footer-right">
+      <span class="copy">© <span id="year"></span> DEVSEO — все права защищены</span>
+      <span class="divider" aria-hidden="true"></span>
+      <a class="privacy" href="privacy.html">Политика конфиденциальности</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../Devseo/js/app.js"></script>
+</body>
+</html>
