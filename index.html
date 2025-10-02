@@ -18,25 +18,44 @@
   <div class="container nav">
     <!-- ЛОГО -->
     <a href="./index.html#" class="logo" aria-label="На главную">
-      <img src="./img/icon_hader/logo.png" alt="Логотип">
+      <img src="./img/icon_hader/Logo.png" alt="Логотип">
     </a>
 
 
-    <nav aria-label="Основная навигация">
-            <button class="nav-toggle" id="navBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
-              ☰
-            </button>
-            <div class="nav-links" id="navMenu">
-    <!-- МЕНЮ -->
     <nav class="main-nav" aria-label="Основная навигация">
-      <a href="#about">О нас</a>
-      <a href="#training">Обучение</a>
-      <a href="#gallery">Фото</a>
-      <a href="#faq">FAQ</a>
-      <a href="#reviews">Отзывы</a>
+      <button class="nav-toggle" id="navBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+        ☰
+      </button>
+            <div class="nav-links" id="navMenu">
+                <!-- МЕНЮ -->
+                <nav class="menu-nav" aria-label="Основная навигация">
+                  <a href="#about">О нас</a>
+                  <a href="#training">Обучение</a>
+                  <a href="#gallery">Фото</a>
+                  <a href="#faq">FAQ</a>
+                  <a href="#reviews">Отзывы</a>
+                </nav>
+                <!-- КОНТАКТЫ -->
+              <div class="contacts">
+                <a href="tel:+79033331623" class="phone"><img src="./img/icon_hader/icon_Call.svg">+7 (903) 333-16-23</a>
+                <div class="socials">
+                  <a href="https://wa.me/79033331623" target="_blank" rel="noopener">
+                    <img src="./img/icon_hader/Whatsapp.svg" alt="Whatsapp">
+                  </a>
+                  <a href="viber://chat?number=79033331623" target="_blank" rel="noopener">
+                    <img src="./img/icon_hader/Viber.svg" alt="Viber">
+                  </a>
+                  <a href="https://t.me/username" target="_blank" rel="noopener">
+                    <img src="./img/icon_hader/Telegram.svg" alt="Telegram">
+                  </a>
+                  <a href="https://hh.ru" target="_blank" rel="noopener">
+                    <img src="./img/icon_hader/min-hh.svg" alt="HeadHunter">
+                  </a>
+                </div>
+              </div>
+            </div>
     </nav>
-    <!-- КОНТАКТЫ -->
-    <div class="contacts">
+    <div class="contacts out">
       <a href="tel:+79033331623" class="phone"><img src="./img/icon_hader/icon_Call.svg">+7 (903) 333-16-23</a>
       <div class="socials">
         <a href="https://wa.me/79033331623" target="_blank" rel="noopener">
@@ -53,8 +72,7 @@
         </a>
       </div>
     </div>
-            </div>
-    </nav>
+
   </div>
 </header>
 
@@ -477,10 +495,12 @@
         </p>
       </div>
     </article>
-
+    <!-- Контейнер для подгружаемых отзывов (с плавным раскрытием) -->
+    <div id="reviewsExtra" class="reviews-extra" aria-live="polite"></div>
     <!-- Кнопка перехода на страницу всех отзывов -->
     <div class="reviews-cta">
-      <a class="btn-orange" href="./reviews.html">Смотреть все отзывы</a>
+      <button class="btn-orange" id="btnLoadMore" data-batch="3" >Смотреть все отзывы</button>
+      <button class="btn-outline" id="btnCollapse" hidden>Свернуть</button>
     </div>
 
   </div>
