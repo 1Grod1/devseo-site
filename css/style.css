@@ -829,6 +829,7 @@ article.t-item.suggestions{
   .training-head{ grid-template-columns:1fr; }
   .training-head .head-line{ display:none; } /* можно скрыть линию на узких */
   .t-item{ align-items:flex-start; }
+  .t-btn .btn {width: 22em;}
 }
 
 /* <!-- =============================

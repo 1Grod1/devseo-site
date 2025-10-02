@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adc2aff1-e105-4899-9e9b-5e9bbe69f7c6" name="Changes" comment="" />
+    <list default="true" id="adc2aff1-e105-4899-9e9b-5e9bbe69f7c6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +58,7 @@
       <workItem from="1759305443435" duration="1647000" />
       <workItem from="1759307899122" duration="8636000" />
       <workItem from="1759387996573" duration="10159000" />
+      <workItem from="1759400284286" duration="184000" />
     </task>
     <task id="LOCAL-00001" summary="update url for img">
       <option name="closed" value="true" />
